@@ -2,8 +2,9 @@ package models;
 
 public class Courier {
 
-    private String login;
 
+
+    private String login;
     private String password;
     private String firstName;
 
@@ -24,6 +25,10 @@ public class Courier {
     public Courier withFirstname(String firstName) {
         this.firstName = firstName;
         return this;
+    }
+    public void setLoginAndPass(String login, String password) {
+        this.login = login;
+        this.password = password;
     }
     @Override
     public String toString() {
