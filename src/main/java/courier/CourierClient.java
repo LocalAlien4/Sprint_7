@@ -29,7 +29,7 @@ public class CourierClient {
                 .when()
                 .post(COURIER_LOGIN_URL);
     }
-    @Step("Удаление курьера")
+    @Step("Удаление курьера {id}")
     public Response delete(int id) {
         return given()
                 .header("Content-type", "application/json")
