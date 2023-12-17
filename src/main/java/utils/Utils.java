@@ -16,4 +16,11 @@ public class Utils {
 
         return buffer.toString();
     }
+    public static int randomInt(int length) {
+        Random random = new Random();
+        int minValue = 1;
+        int maxValue = 50;
+        int randomValue = minValue + (int) (Math.random() * (maxValue - minValue + 1));
+        return randomValue;
+    }
 }
